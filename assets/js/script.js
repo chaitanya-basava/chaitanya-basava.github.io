@@ -41,7 +41,10 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 
     modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+    modalTitle.innerHTML = (
+        this.querySelector("[data-testimonials-title]").innerHTML +
+        ' <i class="fa fa-linkedin-square"></i>'
+    );
     modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
     modalLinkedin.href = "https://www.linkedin.com/in/" + this.querySelector("[data-testimonials-linkedin]").innerHTML;
 

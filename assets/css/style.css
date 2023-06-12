@@ -1758,6 +1758,28 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
+.chip {
+    /* Center the content */
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+
+    background: var(--border-gradient-onyx);
+    color: var(--orange-yellow-crayola);
+    box-shadow: var(--shadow-1);
+
+    /* Rounded border */
+    border-radius: 9999px;
+
+    /* Spacing */
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem 0rem;
+}
+
+.chip__content {
+    margin-right: 0.25rem;
+    margin-bott: 0.25rem;
+}
 
 
 /**
