@@ -194,24 +194,6 @@
           <h3 class="h3 service-title">What I do</h3>
 
           <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">System design</h4>
-
-                <p class="service-item-text">
-                  Learn and implement software applications to demonstrate system design concepts.
-                </p>
-              </div>
-
-            </li>
-
             <li class="service-item">
 
               <div class="service-icon-box">
@@ -222,8 +204,27 @@
                 <h4 class="h4 service-item-title">Software development</h4>
 
                 <p class="service-item-text">
-                  Develop software and get involved in open source contribution.
+                  I develop software applications for a better tomorrow.
                 </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">System design</h4>
+
+                <p class="service-item-text">
+                  Learn and implement applications to demonstrate system design concepts.
+                </p>
+                <a href="https://github.com/chaitanya-basava/system_design" target="_blank">
+                  <p class="service-item-text" style="color: rgb(205, 165, 0)">Github Repo</p>
+                </a>
               </div>
 
             </li>
@@ -341,7 +342,7 @@
         <section class="timeline">
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="laptop-outline"></ion-icon>
             </div>
             <h3 class="h3">Experience</h3>
           </div>
@@ -351,42 +352,65 @@
               <h4 class="h4 timeline-item-title">Software Dev Engineer 2 @ Swiggy</h4>
               <span>Oct 2022 — Mar 2023</span>
               <p class="timeline-text">
+                Developed the capability to deploy PyTorch models on the in-house JVM based data science model inference
+                platform (DSP), enabling the data science team to utilise PyTorch as well for model development.
+              </p>
+              <p class="timeline-text">
+                Implemented platform cost monitoring, for active notification of long-running spark tasks and helped
+                reduce the compute usage of Data Science team by ~45%.
+              </p>
+              <p class="timeline-text">
+                Implemented model observability capabilities, to track the performance and drift in the models which are
+                live in production.
               </p>
             </li>
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Machine Learning Engineer 1 @ Swiggy</h4>
               <span>Dec 2021 — Sept 2022</span>
               <p class="timeline-text">
+                Scaled the Smart Push Notifications to 20 million user base while reducing the runtime of the spark job
+                from 9 hrs to 2 hrs, getting the compute cost down by ~75% from $688.74 to $166.84, which led to an
+                average increment of 117.6 orders per day and a 14% reduction in push notification uninstall rates.
+              </p>
+              <p class="timeline-text">
+                Optimised the inference time of spell correction tensorflow model to under 100ms (tested with a
+                load of 1000rps).
               </p>
             </li>
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Data Science Engineer @ Stylumia</h4>
               <span>Oct 2020 — Nov 2021</span>
               <p class="timeline-text">
-                Worked on developing a visual search engine, which has been integrated into Stylumia's C.IT product to
-                facilitate the customers to find similar fashion styles as in the images of their interest. Worked with
-                various tools like Amazon SQS, Elasticsearch for developing ingestion pipelines to power the search
-                engine with necessary data and worked with Fast API to develop the necessary microservice to power
-                visualarity in C.IT tool.
+                Lead the development of a “visual search engine tool” and integrated it into Stylumia's C.IT product,
+                implemented automated data ingestion pipelines and a backend microservice that supports a p99 of
+                30ms for a throughput of ~200RPS.
+              </p>
+              <p class="timeline-text">
+                Automated image-tagging for customer-specific report generation, which reduced the report generation
+                time by 50%, leading to an 18% increment in customer conversion rate.
+              </p>
+              <p class="timeline-text">
+                <b>Technologies used:</b> S3, AWS SQS, ElasticSearch, FastAPI, PyTorch, MLFlow, Optuna
               </p>
             </li>
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Research Intern @ Siemens</h4>
               <span>Jan 2020 — Jun 2020</span>
               <p class="timeline-text">
-                As a part of the internship project, I have worked on developing an image processing algorithm that
-                would predict the approximate percentage of water contained in a potato, given its image.
-                A demo Django web application was developed for internal presentations.
+                Worked on Developing an algorithm to predict the water percentage, age, and weight estimation given
+                the image of a potato and integrated the algorithm into an internal tool being developed at Siemens.
               </p>
             </li>
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Software Dev Engineer 2 @ Swiggy</h4>
               <span>Jun 2019 — Jul 2019</span>
               <p class="timeline-text">
-                I was part of the team responsible for developing the chatbot option of Flutura's Cerebra platform.
-                The tech stack used in the project includes the Django REST framework, PostgreSQL and Dialogflow for
-                backend and Angular for frontend. I was responsible for adding new features and managing already
-                existing dialogue options in the backend part of the project.
+                Engaged with the chatbot team of Flutura's Cerebra platform to develop a new chat intended to increase
+                diversity in the chatbot's responses. I restructured and redesigned the backend API flow from scratch,
+                which helped reduce latency of chat responses by ~65% from the earlier version.
+              </p>
+              <p class="timeline-text">
+                <b>Technologies used:</b> Django REST Framework, PostgreSQL, Dialog-Flow
               </p>
             </li>
           </ol>
@@ -403,7 +427,7 @@
           <ol class="timeline-list">
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">University of Texas at Dallas [Incoming]</h4>
-              <span>Aug 2023 — </span>
+              <span>Aug 2023 — ongoing</span>
               <p class="timeline-text">
                 Master of Science (Computer Science)
               </p>
@@ -418,7 +442,7 @@
                 Bachelor of Technology - BTech (Honors) in Electronics and Communications Engineering
               </p>
               <p class="timeline-text">
-                Grade: 8.66/10
+                <b>Grade:</b> 8.66/10
               </p>
             </li>
             <li class="timeline-item">
@@ -428,25 +452,10 @@
                 Higher Secondary Certificate (Intermediate)
               </p>
               <p class="timeline-text">
-                Percentage: 97.3%
+                <b>Percentage:</b> 97.3%
               </p>
             </li>
           </ol>
-        </section>
-
-        <section class="skill">
-          <h3 class="h3 skills-title">My skills</h3>
-          <ul class="skills-list content-card">
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-            </li>
-          </ul>
         </section>
       </article>
 
@@ -464,78 +473,59 @@
 
         <section class="projects">
           <ul class="filter-list">
-
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
             </li>
-
             <li class="filter-item">
               <button data-filter-btn>Web design</button>
             </li>
-
             <li class="filter-item">
               <button data-filter-btn>Applications</button>
             </li>
-
             <li class="filter-item">
               <button data-filter-btn>Web development</button>
             </li>
-
           </ul>
 
           <div class="filter-select-box">
-
             <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
+              <div class="select-value" data-select-value>Select category</div>
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
-
             </button>
 
             <ul class="select-list">
-
               <li class="select-item">
                 <button data-select-item>All</button>
               </li>
-
               <li class="select-item">
                 <button data-select-item>Web design</button>
               </li>
-
               <li class="select-item">
                 <button data-select-item>Applications</button>
               </li>
-
               <li class="select-item">
                 <button data-select-item>Web development</button>
               </li>
-
             </ul>
 
           </div>
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
+<!--            <li class="project-item  active" data-filter-item data-category="web development">-->
+<!--              <a href="#">-->
+<!--                <figure class="project-img">-->
+<!--                  <div class="project-item-icon-box">-->
+<!--                    <ion-icon name="eye-outline"></ion-icon>-->
+<!--                  </div>-->
+<!--                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">-->
+<!--                </figure>-->
+<!--                <h3 class="project-title">Finance</h3>-->
+<!--                <p class="project-category">Web development</p>-->
+<!--              </a>-->
+<!--            </li>-->
 
           </ul>
         </section>
@@ -630,26 +620,19 @@
         </section>
 
         <section class="contact-form">
-
           <h3 class="h3 form-title">Contact Form</h3>
-
           <form action="#" class="form" data-form>
-
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
 
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-
           </form>
-
         </section>
 
       </article>
