@@ -1774,11 +1774,19 @@ textarea.form-input::-webkit-resizer { display: none; }
     /* Spacing */
     padding: 0.25rem 0.5rem;
     margin: 0.25rem 0rem;
+
+    transition: var(--transition-1);
+}
+
+.chip:hover {
+    background: var(--orange-yellow-crayola);
+    color: var(--border-gradient-onyx);
+    cursor: pointer;
+    transform: scale(1.25);
 }
 
 .chip__content {
     margin-right: 0.25rem;
-    margin-bott: 0.25rem;
 }
 
 
