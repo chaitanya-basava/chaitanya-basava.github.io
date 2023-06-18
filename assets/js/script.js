@@ -162,3 +162,11 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+// career elements prepend text
+var pElements = document.querySelectorAll('.career-element');
+
+for (var i = 0; i < pElements.length; i++) {
+  pElements[i].innerHTML = '- ' + pElements[i].innerHTML;
+}
