@@ -35,9 +35,9 @@ const testimonialsModalFunc = function () {
 }
 
 // add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
+for (const element of testimonialsItem) {
 
-  testimonialsItem[i].addEventListener("click", function () {
+  element.addEventListener("click", function () {
 
     modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
@@ -69,8 +69,8 @@ const filterBtn = document.querySelectorAll("[data-filter-btn]");
 select.addEventListener("click", function () { elementToggleFunc(this); });
 
 // add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
+for (const element of selectItems) {
+  element.addEventListener("click", function () {
 
     let selectedValue = this.innerText.toLowerCase();
     selectValue.innerText = this.innerText;
@@ -85,14 +85,14 @@ const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
 
-  for (let i = 0; i < filterItems.length; i++) {
+  for (const element of filterItems) {
 
     if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
+      element.classList.add("active");
+    } else if (selectedValue === element.dataset.category) {
+      element.classList.add("active");
     } else {
-      filterItems[i].classList.remove("active");
+      element.classList.remove("active");
     }
 
   }
@@ -102,9 +102,9 @@ const filterFunc = function (selectedValue) {
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
 
-for (let i = 0; i < filterBtn.length; i++) {
+for (const element of filterBtn) {
 
-  filterBtn[i].addEventListener("click", function () {
+  element.addEventListener("click", function () {
 
     let selectedValue = this.innerText.toLowerCase();
     selectValue.innerText = this.innerText;
@@ -126,8 +126,8 @@ const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
 
 // add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
+for (const element of formInputs) {
+  element.addEventListener("input", function () {
 
     // check form validation
     if (form.checkValidity()) {
@@ -146,8 +146,8 @@ const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+for (const element of navigationLinks) {
+  element.addEventListener("click", function () {
 
     for (let i = 0; i < pages.length; i++) {
       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
@@ -165,8 +165,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 
 // career elements prepend text
-var pElements = document.querySelectorAll('.career-element');
-
-for (var i = 0; i < pElements.length; i++) {
-  pElements[i].innerHTML = '- ' + pElements[i].innerHTML;
+const pElements = document.querySelectorAll('.career-element');
+for (const element of pElements) {
+  element.innerHTML = '- ' + pElements[i].innerHTML;
 }
