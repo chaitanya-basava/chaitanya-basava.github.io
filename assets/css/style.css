@@ -1934,3 +1934,7 @@ figure:hover {
     mask-position: 120%;
     opacity: 1;
 }
+
+ion-icon {
+  pointer-events: none;
+}
