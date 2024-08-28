@@ -125,7 +125,7 @@ const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
 
-// add event to all form input field
+// add event to all form input fields
 for (const element of formInputs) {
   element.addEventListener("input", function () {
 
@@ -145,7 +145,7 @@ for (const element of formInputs) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
+// add event to all nav links
 for (const element of navigationLinks) {
   element.addEventListener("click", function () {
 
@@ -167,5 +167,5 @@ for (const element of navigationLinks) {
 // career elements prepend text
 const pElements = document.querySelectorAll('.career-element');
 for (const element of pElements) {
-  element.innerHTML = '- ' + pElements[i].innerHTML;
+  element.innerHTML = '- ' + element.innerHTML;
 }
