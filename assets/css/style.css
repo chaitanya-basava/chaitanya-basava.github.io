@@ -823,6 +823,20 @@ main {
   box-shadow: 0 0 0 4px var(--jet);
 }
 
+.work-item::after {
+  width: 30px !important;
+  height: 30px !important;
+  background-image: var(--icon-image);
+  background-size: contain; /* This ensures the image fits properly */
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateX(-37%);
+}
+
+.work-item {
+  --icon-image: url(attr(data-icon));
+}
+
 .timeline-text {
   color: var(--light-gray);
   font-weight: var(--fw-300);

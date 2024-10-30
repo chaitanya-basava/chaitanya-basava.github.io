@@ -169,3 +169,8 @@ const pElements = document.querySelectorAll('.career-element');
 for (const element of pElements) {
   element.innerHTML = '- ' + element.innerHTML;
 }
+
+document.querySelectorAll('.timeline-item').forEach(item => {
+  const iconPath = item.getAttribute('data-icon');
+  item.style.setProperty('--icon-image', `url(${iconPath})`);
+});
