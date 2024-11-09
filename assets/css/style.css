@@ -561,7 +561,11 @@ main {
  * #testimonials 
  */
 
-.testimonials { margin-bottom: 30px; }
+.testimonials {
+  margin-bottom: 30px;
+  position: relative;
+  padding: 20px;
+}
 
 .testimonials-title { margin-bottom: 20px; }
 
@@ -835,6 +839,11 @@ main {
 
 .work-item {
   --icon-image: url(attr(data-icon));
+}
+
+.work-item:hover::after {
+  text-: var();
+  transition-duration: 0.5s;
 }
 
 .timeline-text {
