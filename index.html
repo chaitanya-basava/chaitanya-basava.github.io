@@ -463,6 +463,25 @@
             <li class="timeline-item work-item" data-icon="../images/resume_icons/copart.jpeg" title="copart">
               <h4 class="h4 timeline-item-title">Software Engineer @ Copart</h4>
               <span>Aug 2024 — ongoing | Dallas, TX</span>
+              <p class="timeline-text career-element">
+                Developed an in-app message notification service using Kafka, NChan, Redis, Cassandra, and Spring Cloud.
+                Scaled to 1M daily notifications by leveraging Kafka lag metrics for consumer autoscaling,
+                boosting the user engagement rate by 30%.
+              </p>
+              <p class="timeline-text career-element">
+                Integrated customer support ticketing into all user-facing apps with Spring Boot, Solr and Kafka,
+                enabling direct ticket creation and built a dashboard over the Solr collection for internal resolution
+                tracking, reducing customer grievance SLAs by 20%.
+              </p>
+              <p class="timeline-text career-element">
+                Migrated all existing Redis operations to leverage pipelining across all internal services,
+                reducing network utilization by 30% and Redis cluster’s CPU utilization by 40%,
+                while decreasing rate limiter’s average latency from 70ms to ~40ms.
+              </p>
+              <p class="timeline-text career-element">
+                Upgraded all member microservices from Spring 2.7.3 to 3.2.2,
+                ensuring compatibility with Java 21 and GraalVM JDK.
+              </p>
               <br>
               <p class="timeline-text"><b>Technologies used:</b></p>
               <div class="chip">
@@ -510,8 +529,13 @@
                 scaling dynamically based on the traffic load using EKS.
               </p>
               <p class="timeline-text career-element">
-                Configured Elastic Load Balancer (ELB) to ensure efficient traffic distribution, high availability,
-                and optimal performance under varying request volumes.
+                Implemented data pipelines in Python and orchestrated them using Airflow, to automatically retrieve
+                new documents from the S3 bucket and periodically re-scrape UTD websites,
+                ensuring the OpenSearch index remained up to date with the latest content.
+              </p>
+              <p class="timeline-text career-element">
+                Configured S3 Lifecycle rules to automatically archive document and user chat data older
+                than 3 months into S3 Glacier, optimizing storage costs while maintaining data retention compliance.
               </p>
               <br>
               <p class="timeline-text"><b>Technologies used:</b></p>
@@ -541,18 +565,22 @@
               <h4 class="h4 timeline-item-title">Software Dev Engineer 2 @ Swiggy</h4>
               <span>Oct 2022 — Jul 2023 | Bangalore, India</span>
               <p class="timeline-text career-element">
+                Developed a model feature store in the in-house data science platform to cache precomputed features in
+                Redis/DynamoDB, based on individual model’s latency and RPM needs, reducing response times
+                by 80% on average, and boosting revenue by $20M/month.
+              </p>
+              <p class="timeline-text career-element">
                 Designed PyTorch model serving capability within the Spring Boot codebase
                 using the Deep Java Library and Nvidia Triton for our in-house data science platform,
                 enabling PyTorch integration for production serving and reduced TensorFlow model memory usage by 30%.
               </p>
               <p class="timeline-text career-element">
                 Implemented robust platform cost monitoring mechanisms,
-                leading to a significant reduction in the Data Science team's compute usage by approximately 45%
+                leading to a significant reduction in the Data Science team's compute usage by approximately 45%.
               </p>
               <p class="timeline-text career-element">
-                Developed an observability tool using Databricks, Kafka, and Spark,
-                hosting and monitoring 80+ deployed data science models in real-time,
-                improving governance and reducing response times by 20%.
+                Developed an observability tool using Databricks, Kafka, and Spark, hosting and monitoring 80+ deployed
+                data science models in real-time, improving governance and reducing response times by 20%.
               </p>
               <br>
               <p class="timeline-text"><b>Technologies used:</b></p>
@@ -582,18 +610,17 @@
               <h4 class="h4 timeline-item-title">Machine Learning Engineer 1 @ Swiggy</h4>
               <span>Dec 2021 — Sept 2022 | Bangalore, India</span>
               <p class="timeline-text career-element">
-                Expanded the reach of smart push notifications to 20 million users,
-                while drastically reducing Spark job runtime from 9 hours to 2 hours
-                and cutting compute costs by ~75% (from $688.74 to $166.84).
-                This resulted in a daily order increment of 117.6 on average and a 14% decrease in push notification uninstall rates
+                Expanded the reach of smart push notifications to 20 million users, while drastically reducing Spark
+                job runtime from 9 hours to 2 hours and cutting compute costs by ~75% (from $688.74 to $166.84).
+                This resulted in a daily order increment of 117.6 on average and a 14% decrease in push notification uninstall rates.
               </p>
               <p class="timeline-text career-element">
                 Improved the spell correction TensorFlow model inference time to under 100ms,
-                successfully tested at a load of 1000 requests per second
+                successfully tested at a load of 1000 requests per second.
               </p>
               <p class="timeline-text career-element">
                 Developed a proof-of-concept (POC) for an insights dashboard
-                aimed at providing actionable competitor insights to restaurant partners
+                aimed at providing actionable competitor insights to restaurant partners.
               </p>
               <br>
               <p class="timeline-text"><b>Technologies used:</b></p>
@@ -614,18 +641,16 @@
               <h4 class="h4 timeline-item-title">Data Science Engineer @ Stylumia</h4>
               <span>Jun 2020 — Dec 2021 | Bangalore, India</span>
               <p class="timeline-text career-element">
-                Led development using SQS, Elasticsearch, HuggingFace,
-                and FastAPI, achieving 1200 RPS throughput and 30 ms P99,
-                which increased user engagement by 15%.
+                Led development using SQS, Elasticsearch, HuggingFace, and FastAPI, achieving 1200 RPS throughput
+                and 30 ms P99, which increased user engagement by 15%.
               </p>
               <p class="timeline-text career-element">
                 Automated the image-tagging process for customer-specific report generation,
-                cutting lead time by 50% and resulting in an 18% increase in customer conversion rate
+                cutting lead time by 50% and resulting in an 18% increase in customer conversion rate.
               </p>
               <p class="timeline-text career-element">
                 Spearheaded the use of Jenkins for microservice deployment automation through CI/CD pipelines
-                and established a culture of thorough code reviews,
-                enhancing deployment speed and code quality.
+                and established a culture of thorough code reviews, enhancing deployment speed and code quality.
               </p>
               <br>
               <p class="timeline-text"><b>Technologies used:</b></p>
@@ -660,7 +685,7 @@
               </p>
               <p class="timeline-text career-element">
                 Integrated the algorithm into an internal food quality assessment tool being prototyped at Siemens,
-                using Django and Docker for seamless operation
+                using Django and Docker for seamless operation.
               </p>
               <br>
               <p class="timeline-text"><b>Technologies used:</b></p>
@@ -678,13 +703,11 @@
               <h4 class="h4 timeline-item-title">Intern @ Flutura</h4>
               <span>Jun 2019 — Jul 2019 | Bangalore, India</span>
               <p class="timeline-text career-element">
-                Contributed to the development of the chatbot feature on Flutura's Cerebra platform.
-                The project used the Django REST framework, PostgreSQL,
-                and DialogFlow for the backend, and Angular for the frontend
+                Contributed to the development of the chatbot feature on Flutura's Cerebra platform. The project used
+                the Django REST framework, PostgreSQL, and DialogFlow for the backend, and Angular for the frontend.
               </p>
               <p class="timeline-text career-element">
-                Responsible for adding new features
-                and managing existing dialogue options in the backend part of the project
+                Responsible for adding new features and managing existing dialogue options in the backend part of the project.
               </p>
               <br>
               <p class="timeline-text"><b>Technologies used:</b></p>
