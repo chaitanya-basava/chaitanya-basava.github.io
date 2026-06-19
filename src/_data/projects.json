@@ -1,0 +1,112 @@
+{
+  "categories": [
+    {
+      "id": "applications",
+      "label": "Applications"
+    },
+    {
+      "id": "protocols",
+      "label": "Protocols"
+    }
+  ],
+  "items": [
+    {
+      "title": "Image search Engine",
+      "categoryId": "applications",
+      "url": "https://github.com/chaitanya-basava/Image-Search-Engine",
+      "sourceUrl": "https://github.com/chaitanya-basava/Image-Search-Engine",
+      "image": {
+        "src": "./assets/images/project/img_search.jpg",
+        "alt": "Visual search engine"
+      },
+      "techStack": [
+        "Spark Streaming",
+        "Apache Kafka",
+        "ElasticSearch",
+        "MLFlow",
+        "FastAPI",
+        "React"
+      ]
+    },
+    {
+      "title": "Chandy and Lamport's Snapshot Protocol",
+      "categoryId": "protocols",
+      "url": "https://github.com/chaitanya-basava/chandy_and_lamport_snapshot_protocol",
+      "sourceUrl": "https://github.com/chaitanya-basava/chandy_and_lamport_snapshot_protocol",
+      "image": {
+        "src": "./assets/images/project/chandy_lamport.jpg",
+        "alt": "Snapshot protocol"
+      },
+      "techStack": [
+        "Java",
+        "TCP Sockets",
+        "multithreading"
+      ]
+    },
+    {
+      "title": "Mutual Exclusion Algorithms for Distributed Systems",
+      "categoryId": "protocols",
+      "url": "https://github.com/chaitanya-basava/mutual_exclusion_algorithms",
+      "sourceUrl": "https://github.com/chaitanya-basava/mutual_exclusion_algorithms",
+      "image": {
+        "src": "./assets/images/project/mutual_exclusion.jpg",
+        "alt": "Mutual Exclusion in Distributed Systems"
+      },
+      "techStack": [
+        "Java",
+        "TCP Sockets",
+        "multithreading"
+      ]
+    },
+    {
+      "title": "N thread mutual exclusion algorithms",
+      "categoryId": "protocols",
+      "url": "https://github.com/chaitanya-basava/n-thread-mutual-exclusion",
+      "sourceUrl": "https://github.com/chaitanya-basava/n-thread-mutual-exclusion",
+      "image": {
+        "src": "./assets/images/project/n_thread_mutex.jpg",
+        "alt": "Mutual Exclusion amongst N threads"
+      },
+      "techStack": [
+        "Java",
+        "multithreading",
+        "synchronization"
+      ]
+    },
+    {
+      "title": "Concurrent Shared Data Structures",
+      "categoryId": "protocols",
+      "url": "https://github.com/chaitanya-basava/ConcurrentDataStructures",
+      "sourceUrl": "https://github.com/chaitanya-basava/ConcurrentDataStructures",
+      "image": {
+        "src": "./assets/images/project/concurrent_ds.jpg",
+        "alt": "Concurrent Data Structures"
+      },
+      "techStack": [
+        "Java",
+        "multithreading",
+        "locks",
+        "data structures"
+      ]
+    },
+    {
+      "title": "PDF Whisperer",
+      "categoryId": "applications",
+      "url": "https://pdf-whisperer.streamlit.app/",
+      "sourceUrl": "https://github.com/chaitanya-basava/PDFWhisperer",
+      "image": {
+        "src": "./assets/images/project/pdf_whisperer.png",
+        "alt": "PDF Whisperer"
+      },
+      "techStack": [
+        "LangChain",
+        "Groq Cloud",
+        "Cohere",
+        "Streamlit",
+        "Python",
+        "LLM",
+        "RAG"
+      ]
+    }
+  ]
+}

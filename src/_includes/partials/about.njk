@@ -1,0 +1,77 @@
+<article class="about active" data-page="about">
+  <header>
+    <h2 class="h2 article-title">About me</h2>
+  </header>
+
+  <section class="about-text">
+    {% for paragraph in about.paragraphs %}
+      <p>{{ paragraph }}</p>
+    {% endfor %}
+  </section>
+
+  <section class="service">
+    <h3 class="h3 service-title">What I do</h3>
+
+    <ul class="service-list">
+      {% for service in about.services %}
+        <li class="service-item">
+          <div class="service-icon-box">
+            <img src="{{ service.icon.src }}" alt="{{ service.icon.alt }}" width="40">
+          </div>
+
+          <div class="service-content-box">
+            <h4 class="h4 service-item-title">{{ service.title }}</h4>
+            <p class="service-item-text">{{ service.description }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="testimonials">
+    <h3 class="h3 testimonials-title">Testimonials</h3>
+    <ul class="testimonials-list has-scrollbar">
+      {% for testimonial in about.testimonials %}
+        <li class="testimonials-item">
+          <div class="content-card" data-testimonials-item>
+            <figure class="testimonials-avatar-box">
+              <img src="{{ testimonial.avatar.src }}" alt="{{ testimonial.avatar.alt }}" width="60" data-testimonials-avatar>
+            </figure>
+
+            <h4 class="h4 testimonials-item-title" data-testimonials-title>{{ testimonial.name }}</h4>
+            <span hidden data-testimonials-linkedin>{{ testimonial.linkedin }}</span>
+
+            <div class="testimonials-text" data-testimonials-text>
+              <p>{{ testimonial.quote }}</p>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <div class="modal-container" data-modal-container>
+    <div class="overlay" data-overlay></div>
+    <section class="testimonials-modal">
+      <button class="modal-close-btn" data-modal-close-btn aria-label="Close testimonial">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="modal-img-wrapper">
+        <figure class="modal-avatar-box">
+          <img src="" alt="" width="80" data-modal-img>
+        </figure>
+        <img src="./assets/images/icon-quote.svg" alt="quote icon">
+      </div>
+
+      <div class="modal-content">
+        <a href="" target="_blank" rel="noopener noreferrer" data-modal-linkedin>
+          <h4 class="h3 modal-title" data-modal-title></h4>
+        </a>
+        <div data-modal-text>
+          <p></p>
+        </div>
+      </div>
+    </section>
+  </div>
+</article>

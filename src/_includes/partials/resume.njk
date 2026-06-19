@@ -1,0 +1,101 @@
+<article class="resume" data-page="resume">
+  <header>
+    <a href="{{ resume.resumeUrl }}" target="_blank" rel="noopener noreferrer">
+      <h2 class="h2 article-title">Resume <i class="fa fa-download"></i></h2>
+    </a>
+  </header>
+
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Education</h3>
+    </div>
+
+    <ol class="timeline-list">
+      {% for item in resume.education %}
+        <li class="timeline-item work-item">
+          <img class="timeline-item-icon" src="{{ item.icon }}" alt="" loading="lazy" aria-hidden="true">
+          <h4 class="h4 timeline-item-title">{{ item.institution }}</h4>
+          <span>{{ item.period }}</span>
+          <p class="timeline-text">{{ item.degree }}</p>
+          <p class="timeline-text"><b>Grade:</b> {{ item.grade }}</p>
+          <p class="timeline-text"><b>Relevant Coursework:</b></p>
+          {% for course in item.coursework %}
+            <div class="chip">
+              <div class="chip__content">{{ course }}</div>
+            </div>
+          {% endfor %}
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="laptop-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Experience</h3>
+    </div>
+
+    <ol class="timeline-list">
+      {% for item in resume.experience %}
+        <li class="timeline-item work-item" title="{{ item.company }}">
+          <img class="timeline-item-icon" src="{{ item.icon }}" alt="" loading="lazy" aria-hidden="true">
+          <h4 class="h4 timeline-item-title">{{ item.title }}</h4>
+          <span>{{ item.period }}</span>
+
+          {% for bullet in item.bullets %}
+            <p class="timeline-text career-element">- {{ bullet }}</p>
+          {% endfor %}
+
+          {% if item.technologies.length %}
+            <p class="timeline-text timeline-tech-heading"><b>Technologies used:</b></p>
+            {% for technology in item.technologies %}
+              <div class="chip">
+                <div class="chip__content">{{ technology }}</div>
+              </div>
+            {% endfor %}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="newspaper-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Publications</h3>
+    </div>
+
+    <ol class="timeline-list">
+      {% for publication in resume.publications %}
+        <li class="timeline-item">
+          <a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">
+            <h4 class="h4 timeline-item-title">{{ publication.title }}</h4>
+          </a>
+          <span>{{ publication.venue }}</span>
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="construct-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Skills</h3>
+    </div>
+
+    {% for skill in resume.skills %}
+      <div class="chip">
+        <div class="chip__content">{{ skill }}</div>
+      </div>
+    {% endfor %}
+  </section>
+</article>

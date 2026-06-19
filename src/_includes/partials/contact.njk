@@ -1,0 +1,32 @@
+<article class="contact" data-page="contact">
+  <header>
+    <h2 class="h2 article-title">Contact</h2>
+  </header>
+
+  <section class="mapbox" data-mapbox>
+    <figure>
+      <iframe
+        allowfullscreen=""
+        src="{{ contact.map.src }}"
+        width="400"
+        height="300"
+        loading="lazy"
+        title="{{ contact.map.title }}"></iframe>
+    </figure>
+  </section>
+
+  <section class="timeline">
+    <div class="article-title">
+      <h4 class="contact-message">{{ contact.messageHtml | safe }}</h4>
+    </div>
+
+    {% for action in contact.actions %}
+      <a href="{{ action.href }}" class="title-wrapper" {% if action.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+        <div class="icon-box">
+          <ion-icon name="{{ action.icon }}"></ion-icon>
+        </div>
+        <h4 class="contact-action-title">{{ action.label }}</h4>
+      </a>
+    {% endfor %}
+  </section>
+</article>

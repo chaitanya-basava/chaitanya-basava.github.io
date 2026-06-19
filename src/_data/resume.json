@@ -1,0 +1,244 @@
+{
+  "resumeUrl": "https://drive.google.com/file/d/1jHUfBVVXDT-dilajwVlHC28AgDqfxS2A/view?usp=sharing",
+  "education": [
+    {
+      "institution": "University of Texas at Dallas",
+      "period": "Aug 2023 — May 2025",
+      "icon": "./assets/images/resume_icons/utd.jpeg",
+      "degree": "Master of Science — M.S in Computer Science",
+      "grade": "3.94/4.0",
+      "coursework": [
+        "Database Design",
+        "Advanced Operating Systems",
+        "Intro to Multicore Programming",
+        "Design and Analysis of Computer Algorithms",
+        "Big Data Analysis",
+        "Network Security"
+      ]
+    },
+    {
+      "institution": "Indian Institute of Information Technology, Sri City",
+      "period": "Aug 2016 — Jun 2020",
+      "icon": "./assets/images/resume_icons/sricity.jpeg",
+      "degree": "Bachelor of Technology — BTech (Honors) in Electronics and Communications Engineering",
+      "grade": "8.66/10",
+      "coursework": [
+        "Data Structures and Algorithms",
+        "Object Oriented Programming in Java",
+        "Probability Theory",
+        "Computer Vision",
+        "Machine Learning"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Senior MTS @ Oracle",
+      "period": "Nov 2025 - Present | Austin, TX",
+      "icon": "./assets/images/resume_icons/oracle.png",
+      "company": "oracle",
+      "bullets": [],
+      "technologies": [
+        "Java",
+        "Micronaut",
+        "Apache Kafka",
+        "Network Control Plane"
+      ]
+    },
+    {
+      "title": "Software Engineer @ Copart",
+      "period": "May 2025 — Nov 2025 | Dallas, TX",
+      "icon": "./assets/images/resume_icons/copart.jpeg",
+      "company": "copart",
+      "bullets": [
+        "Designed an AI-based auctioneer POC to drive live auctions by announcing bids and engaging participants, leveraging LlamaIndex for context management, Kokoro-TTS for real-time speech synthesis, and FastAPI for service orchestration.",
+        "Developed a document translation service powered by Gemini API and served through a FastAPI backend, reducing average onboarding time for non-English-speaking customers from 33 days to 2 days."
+      ],
+      "technologies": []
+    },
+    {
+      "title": "Software Engineer (Contract) @ Copart",
+      "period": "May 2024 — Apr 2025 | Dallas, TX",
+      "icon": "./assets/images/resume_icons/copart.jpeg",
+      "company": "copart",
+      "bullets": [
+        "Developed an in-app message notification service using Kafka, NChan, Redis, Cassandra, and Spring boot. Scaled to 1M daily notifications by leveraging Kafka lag metrics for consumer autoscaling, boosting the user engagement rate by 30%.",
+        "Implemented CDC-based data pipelines to sync data from Cassandra to Iceberg and build an analytics dashboard in Tableau, leveraging queries executed by Trino query engine to summarize daily notification trends and identify anomalies.",
+        "Integrated customer support ticketing into all user-facing apps with Spring Boot, Solr and Kafka, enabling direct ticket creation and built a dashboard over the Solr collection for internal resolution tracking, reducing customer grievance SLAs by 20%.",
+        "Migrated all existing Redis operations to leverage pipelining across all internal services, reducing network utilization by 30% and Redis cluster’s CPU utilization by 40%, while decreasing rate limiter’s average latency from 70ms to ~40ms.",
+        "Upgraded all member microservices from Spring 2.7.3 to 3.2.2, ensuring compatibility with Java 21 and GraalVM JDK."
+      ],
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "Spring Batch",
+        "Spring Security",
+        "Apache Kafka",
+        "Apache Solr",
+        "Redis",
+        "MariaDB",
+        "Cassandra",
+        "Trino",
+        "Iceberg"
+      ]
+    },
+    {
+      "title": "Graduate Research Assistant",
+      "period": "Jan 2024 — May 2024 | Richardson, TX",
+      "icon": "./assets/images/resume_icons/utd.jpeg",
+      "company": "UT Dallas",
+      "bullets": [
+        "Developed a chatbot application for UTD-related queries using Retrieval-Augmented Generation (RAG), with UTD documents and web page content stored in S3 and their vector representations managed in OpenSearch for efficient query similarity search.",
+        "Deployed a fine-tuned Llama 3.1 model on AWS Bedrock, enabling accurate and context-aware responses to user questions.",
+        "Implemented a FastAPI backend with LangChain to process chatbot queries, scaling dynamically based on the traffic load using EKS.",
+        "Implemented data pipelines in Python and orchestrated them using Airflow, to automatically retrieve new documents from the S3 bucket and periodically re-scrape UTD websites, ensuring the OpenSearch index remained up to date with the latest content.",
+        "Configured S3 Lifecycle rules to automatically archive document and user chat data older than 3 months into S3 Glacier, optimizing storage costs while maintaining data retention compliance."
+      ],
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "Ultralytics",
+        "Java",
+        "ONNX runtime",
+        "DJL",
+        "Spring Boot"
+      ]
+    },
+    {
+      "title": "Software Dev Engineer 2 @ Swiggy",
+      "period": "Oct 2022 — Mar 2023 | Bangalore, India",
+      "icon": "./assets/images/resume_icons/swiggy.jpeg",
+      "company": "Swiggy",
+      "bullets": [
+        "Developed a model feature store in the in-house data science platform to cache precomputed features in Redis/DynamoDB, based on individual model’s latency and RPM needs, reducing response times by 80% on average, and boosting revenue by $20M/month.",
+        "Designed PyTorch model serving capability within the Spring Boot codebase using the Deep Java Library and Nvidia Triton for our in-house data science platform, enabling PyTorch integration for production serving and reduced TensorFlow model memory usage by 30%.",
+        "Implemented robust platform cost monitoring mechanisms, leading to a significant reduction in the Data Science team's compute usage by approximately 45%.",
+        "Developed an observability tool using Databricks, Kafka, and Spark, hosting and monitoring 80+ deployed data science models in real-time, improving governance and reducing response times by 20%."
+      ],
+      "technologies": [
+        "Apache Spark",
+        "Java",
+        "Scala",
+        "Apache Kafka",
+        "Apache Flink",
+        "Lightbend Akka",
+        "Nvidia Triton"
+      ]
+    },
+    {
+      "title": "Machine Learning Engineer 1 @ Swiggy",
+      "period": "Dec 2021 — Sept 2022 | Bangalore, India",
+      "icon": "./assets/images/resume_icons/swiggy.jpeg",
+      "company": "Swiggy",
+      "bullets": [
+        "Expanded the reach of smart push notifications to 20 million users, while drastically reducing Spark job runtime from 9 hours to 2 hours and cutting compute costs by ~75% (from $688.74 to $166.84). This resulted in a daily order increment of 117.6 on average and a 14% decrease in push notification uninstall rates.",
+        "Improved the spell correction TensorFlow model inference time to under 100ms, successfully tested at a load of 1000 requests per second.",
+        "Developed a proof-of-concept (POC) for an insights dashboard aimed at providing actionable competitor insights to restaurant partners."
+      ],
+      "technologies": [
+        "Apache Spark",
+        "PyTorch",
+        "Scala",
+        "Databricks"
+      ]
+    },
+    {
+      "title": "Data Science Engineer @ Stylumia",
+      "period": "Jun 2020 — Dec 2021 | Bangalore, India",
+      "icon": "./assets/images/resume_icons/stylumia.jpeg",
+      "company": "Stylumia",
+      "bullets": [
+        "Led development using SQS, Elasticsearch, HuggingFace, and FastAPI, achieving 1200 RPS throughput and 30 ms P99, which increased user engagement by 15%.",
+        "Automated the image-tagging process for customer-specific report generation, cutting lead time by 50% and resulting in an 18% increase in customer conversion rate.",
+        "Spearheaded the use of Jenkins for microservice deployment automation through CI/CD pipelines and established a culture of thorough code reviews, enhancing deployment speed and code quality."
+      ],
+      "technologies": [
+        "ElasticSearch",
+        "FastAPI",
+        "PyTorch",
+        "MLFlow",
+        "Optuna",
+        "AWS SQS",
+        "AWS S3"
+      ]
+    },
+    {
+      "title": "Research Intern @ Siemens",
+      "period": "Jan 2020 — Jun 2020 | Bangalore, India",
+      "icon": "./assets/images/resume_icons/siemens.jpeg",
+      "company": "Siemens",
+      "bullets": [
+        "Engineered an attention-based algorithm to estimate weight and water content from potato images, increasing estimation accuracy by 8% and reducing processing time by 30%.",
+        "Integrated the algorithm into an internal food quality assessment tool being prototyped at Siemens, using Django and Docker for seamless operation."
+      ],
+      "technologies": [
+        "Django REST Framework",
+        "TensorFlow",
+        "Docker"
+      ]
+    },
+    {
+      "title": "Intern @ Flutura",
+      "period": "Jun 2019 — Jul 2019 | Bangalore, India",
+      "icon": "./assets/images/resume_icons/flutura.jpeg",
+      "company": "Flutura",
+      "bullets": [
+        "Contributed to the development of the chatbot feature on Flutura's Cerebra platform. The project used the Django REST framework, PostgreSQL, and DialogFlow for the backend, and Angular for the frontend.",
+        "Responsible for adding new features and managing existing dialogue options in the backend part of the project."
+      ],
+      "technologies": [
+        "Django REST Framework",
+        "PostgreSQL",
+        "Dialog-Flow"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "DFW-PP: dynamic feature weighting-based popularity prediction for social media content",
+      "venue": "Journal of supercomputing · Oct 5, 2023",
+      "url": "https://link.springer.com/article/10.1007/s11227-023-05672-8"
+    },
+    {
+      "title": "Truthformers at Factify 2022: Evidence aware Transformer based Model for Multimodal Fact Checking",
+      "venue": "Factify shared task at AAAI · Mar 1, 2022",
+      "url": "https://ceur-ws.org/Vol-3199/paper9.pdf"
+    },
+    {
+      "title": "Transformer Ensemble System for Detection of Offensive Content in Dravidian Languages",
+      "venue": "FIRE 2021: Forum for Information Retrieval Evaluation · Dec 13, 2021",
+      "url": "https://ceur-ws.org/Vol-3159/T3-12.pdf"
+    },
+    {
+      "title": "Single Image Dehazing Using Improved CycleGAN",
+      "venue": "Journal of Visual Communication and Image Representation · Dec 30, 2020",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1047320320302248"
+    }
+  ],
+  "skills": [
+    "C/C++",
+    "Python",
+    "Java",
+    "Scala",
+    "Javascript",
+    "Object Oriented Programming",
+    "SQL",
+    "Spring Boot",
+    "Micronaut",
+    "Apache Spark",
+    "Apache Kafka",
+    "Network Control Plane",
+    "Redis",
+    "Elasticsearch",
+    "Machine Learning",
+    "Deep Learning",
+    "Computer Vision",
+    "Docker",
+    "PyTorch",
+    "TensorFlow",
+    "HTML",
+    "CSS",
+    "Git",
+    "Apache Hive"
+  ]
+}

@@ -1,0 +1,56 @@
+<article class="project" data-page="project">
+  <header>
+    <h2 class="h2 article-title">Projects</h2>
+  </header>
+
+  <section class="projects">
+    <ul class="filter-list">
+      <li class="filter-item">
+        <button class="active" data-filter-btn data-filter-value="all">All</button>
+      </li>
+      {% for category in projects.categories %}
+        <li class="filter-item">
+          <button data-filter-btn data-filter-value="{{ category.id }}">{{ category.label }}</button>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <div class="filter-select-box">
+      <button class="filter-select" data-select>
+        <div class="select-value" data-select-value>Select category</div>
+        <div class="select-icon">
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+      </button>
+
+      <ul class="select-list">
+        <li class="select-item">
+          <button data-select-item data-filter-value="all">All</button>
+        </li>
+        {% for category in projects.categories %}
+          <li class="select-item">
+            <button data-select-item data-filter-value="{{ category.id }}">{{ category.label }}</button>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <ul class="project-list">
+      {% for project in projects.items %}
+        <li class="project-item active" data-filter-item data-category="{{ project.categoryId }}">
+          <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">
+            <figure class="blog-banner-box project-banner-box">
+              <img src="{{ project.image.src }}" alt="{{ project.image.alt }}" loading="lazy">
+            </figure>
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-category">{{ project.categoryId | categoryLabel(projects.categories) }}</p>
+          </a>
+          <p class="project-body">
+            <a href="{{ project.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="project-source-link">GitHub</a>
+            <b>Tech stack: </b>{{ project.techStack | join(", ") }}
+          </p>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</article>

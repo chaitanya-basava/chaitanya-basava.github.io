@@ -1,0 +1,21 @@
+{
+  "map": {
+    "title": "location-map",
+    "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53560.09320626092!2d-96.73225091840321!3d32.96405420208581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1ee979bea767%3A0x2cdb29c046270495!2sRichardson%2C%20TX!5e0!3m2!1sen!2sus!4v1690838648775!5m2!1sen!2sus"
+  },
+  "messageHtml": "Let's chat about tech! Over a &#9749; or call, your choice. Reach out and we can connect. &#128512;",
+  "actions": [
+    {
+      "label": "Connect with me on LinkedIn",
+      "href": "https://linkedin.com/in/chaitu-basava",
+      "icon": "logo-linkedin",
+      "external": true
+    },
+    {
+      "label": "Write me an email",
+      "href": "mailto:chaitanya.basava@gmail.com",
+      "icon": "mail-sharp",
+      "external": false
+    }
+  ]
+}

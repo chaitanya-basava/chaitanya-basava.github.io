@@ -1,0 +1,22 @@
+[
+  {
+    "id": "about",
+    "label": "About"
+  },
+  {
+    "id": "resume",
+    "label": "Resume"
+  },
+  {
+    "id": "project",
+    "label": "Project"
+  },
+  {
+    "id": "blog",
+    "label": "Blog"
+  },
+  {
+    "id": "contact",
+    "label": "Contact"
+  }
+]

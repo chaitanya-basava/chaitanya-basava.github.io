@@ -1,0 +1,9 @@
+<nav class="navbar">
+  <ul class="navbar-list">
+    {% for item in navigation %}
+      <li class="navbar-item">
+        <button class="navbar-link{% if loop.first %} active{% endif %}" data-nav-link data-page-link="{{ item.id }}">{{ item.label }}</button>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

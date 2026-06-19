@@ -1,0 +1,75 @@
+{
+  "name": "Chaitanya Basava",
+  "title": "Software Developer",
+  "avatar": {
+    "src": "./assets/images/me.png",
+    "alt": "Chaitanya Basava",
+    "width": 80
+  },
+  "contacts": [
+    {
+      "title": "Email",
+      "icon": "mail-outline",
+      "links": [
+        {
+          "label": "chaitanya.basava@gmail.com",
+          "href": "mailto:chaitanya.basava@gmail.com"
+        },
+        {
+          "label": "sainagaviswachaitanya.basava@utdallas.edu",
+          "href": "mailto:sainagaviswachaitanya.basava@utdallas.edu"
+        }
+      ]
+    },
+    {
+      "title": "Birthday",
+      "icon": "calendar-outline",
+      "time": {
+        "label": "May 06, 1999",
+        "datetime": "1999-05-06"
+      }
+    },
+    {
+      "title": "Location",
+      "icon": "location-outline",
+      "address": "Richardson, TX, USA"
+    },
+    {
+      "title": "Frontend built on",
+      "icon": "logo-github",
+      "links": [
+        {
+          "label": "codewithsadee's project",
+          "href": "https://github.com/codewithsadee/vcard-personal-portfolio"
+        }
+      ]
+    }
+  ],
+  "socialLinks": [
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/chaitu-basava/",
+      "icon": "logo-linkedin"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com/chaitu_basava/",
+      "icon": "logo-twitter"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/chaitu_basava/",
+      "icon": "logo-instagram"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/chaitanya-basava",
+      "icon": "logo-github"
+    },
+    {
+      "label": "Google Scholar",
+      "href": "https://scholar.google.com/citations?user=a9Vsa4QAAAAJ&hl=en",
+      "icon": "school"
+    }
+  ]
+}

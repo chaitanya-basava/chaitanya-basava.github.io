@@ -1,0 +1,44 @@
+[
+  {
+    "title": "So You Pushed Your .env to Git… What’s Next?",
+    "url": "https://medium.com/p/014fd92c4bfd",
+    "category": "Securing API Key's",
+    "date": {
+      "datetime": "2024-08-27",
+      "label": "Aug 27, 2024"
+    },
+    "image": {
+      "src": "https://miro.medium.com/v2/resize:fit:1200/format:webp/1*-SbFtg6qlQWeuy9cdwsEow.jpeg",
+      "alt": "PyTorch model serving with DJL"
+    },
+    "summary": "Removing .env files from your Git history using git-filter-repo, safeguarding sensitive data and understanding the consequences of rewriting Git history."
+  },
+  {
+    "title": "Enabling large-scale PyTorch model inference at Swiggy",
+    "url": "https://bytes.swiggy.com/enabling-large-scale-pytorch-model-inference-9af260538f5f",
+    "category": "Model Serving",
+    "date": {
+      "datetime": "2023-05-29",
+      "label": "May 29, 2023"
+    },
+    "image": {
+      "src": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*rudaVAzu7avhpr3fFTcqUw.png",
+      "alt": "PyTorch model serving with DJL"
+    },
+    "summary": "Implementation details of PyTorch model serving on JVM using the DJL library. Co-Authored with Abhishek Bose."
+  },
+  {
+    "title": "Smart Push notifications (Multi-Armed Bandits at Swiggy: Part-4)",
+    "url": "https://bytes.swiggy.com/smart-push-notifications-multi-armed-bandits-at-swiggy-part-4-f5698f2af0a6",
+    "category": "Multi-Armed Bandits",
+    "date": {
+      "datetime": "2023-03-30",
+      "label": "Mar 30, 2023"
+    },
+    "image": {
+      "src": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ZXeJ8WrKCNliFa2UbaicQQ.png",
+      "alt": "Smart Push Notifications"
+    },
+    "summary": "Detailed explanation of the Smart PNs project that I worked on during my time at Swiggy."
+  }
+]

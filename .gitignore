@@ -1,1 +1,7 @@
 .idea/
+.npm-cache/
+node_modules/
+dist/
+.cache/
+.serena/
+bitbucket.log
