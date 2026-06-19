@@ -15,9 +15,6 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
-env:
-  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,7 +29,16 @@ jobs:
           cache: npm
 
       - name: Install dependencies
+        env:
+          NODE_ENV: development
+          NPM_CONFIG_OMIT: ""
         run: npm ci --include=dev
+
+      - name: Verify build tools
+        run: |
+          npm config get registry
+          npm ls @11ty/eleventy
+          test -x node_modules/.bin/eleventy
 
       - name: Build and test
         run: npm test

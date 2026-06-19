@@ -4,4 +4,4 @@ node_modules/
 dist/
 .cache/
 .serena/
-bitbucket.log
+*.log
