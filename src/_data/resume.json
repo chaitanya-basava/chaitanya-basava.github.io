@@ -38,16 +38,20 @@
       "icon": "./assets/images/resume_icons/oracle.png",
       "company": "oracle",
       "bullets": [
-
+        "Architected a network data modeling layer for AI data centers that automates interface configuration (P2P, LAG, VLAN) and dynamically allocates IPs based on configuration rules, enabling rapid bootstrapping and operational handover.",
+        "Optimized the device configuration rendering layer by implementing multi-threading and redis-based caching, improving rendering and deployment speed by ~90% across network devices from multiple data centers.",
+        "Built an automated configuration push service utilizing Temporal and Micronaut, reducing operational overhead and accelerating device readiness post-bootstrapping from 3 days to ~1 hour."
       ],
       "technologies": [
         "Java",
+        "Python",
         "Micronaut",
         "Apache Kafka",
         "Redis",
         "Network Control Plane",
         "OracleDB",
-        "Multi-threading"
+        "Multi-threading",
+        "Temporal"
       ]
     },
     {
