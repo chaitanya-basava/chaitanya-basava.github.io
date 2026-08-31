@@ -21,7 +21,7 @@
       "period": "Aug 2016 — Jun 2020",
       "icon": "./assets/images/resume_icons/sricity.jpeg",
       "degree": "Bachelor of Technology — BTech (Honors) in Electronics and Communications Engineering",
-      "grade": "8.66/10",
+      "grade": "8.66/10 (3.6/4.0)",
       "coursework": [
         "Data Structures and Algorithms",
         "Object Oriented Programming in Java",
@@ -33,39 +33,34 @@
   ],
   "experience": [
     {
-      "title": "Senior MTS @ Oracle",
+      "title": "Senior Member of Technical Staff @ Oracle",
       "period": "Nov 2025 - Present | Austin, TX",
       "icon": "./assets/images/resume_icons/oracle.png",
       "company": "oracle",
-      "bullets": [],
+      "bullets": [
+
+      ],
       "technologies": [
         "Java",
         "Micronaut",
         "Apache Kafka",
-        "Network Control Plane"
+        "Redis",
+        "Network Control Plane",
+        "OracleDB",
+        "Multi-threading"
       ]
     },
     {
       "title": "Software Engineer @ Copart",
-      "period": "May 2025 — Nov 2025 | Dallas, TX",
+      "period": "August 2024 — Nov 2025 | Dallas, TX",
       "icon": "./assets/images/resume_icons/copart.jpeg",
       "company": "copart",
       "bullets": [
-        "Designed an AI-based auctioneer POC to drive live auctions by announcing bids and engaging participants, leveraging LlamaIndex for context management, Kokoro-TTS for real-time speech synthesis, and FastAPI for service orchestration.",
-        "Developed a document translation service powered by Gemini API and served through a FastAPI backend, reducing average onboarding time for non-English-speaking customers from 33 days to 2 days."
-      ],
-      "technologies": []
-    },
-    {
-      "title": "Software Engineer (Contract) @ Copart",
-      "period": "May 2024 — Apr 2025 | Dallas, TX",
-      "icon": "./assets/images/resume_icons/copart.jpeg",
-      "company": "copart",
-      "bullets": [
+        "Developed a document translation service powered by Gemini API and served through a FastAPI backend, reducing average onboarding time for non-English-speaking customers from 33 days to 2 days.",
         "Developed an in-app message notification service using Kafka, NChan, Redis, Cassandra, and Spring boot. Scaled to 1M daily notifications by leveraging Kafka lag metrics for consumer autoscaling, boosting the user engagement rate by 30%.",
-        "Implemented CDC-based data pipelines to sync data from Cassandra to Iceberg and build an analytics dashboard in Tableau, leveraging queries executed by Trino query engine to summarize daily notification trends and identify anomalies.",
-        "Integrated customer support ticketing into all user-facing apps with Spring Boot, Solr and Kafka, enabling direct ticket creation and built a dashboard over the Solr collection for internal resolution tracking, reducing customer grievance SLAs by 20%.",
         "Migrated all existing Redis operations to leverage pipelining across all internal services, reducing network utilization by 30% and Redis cluster’s CPU utilization by 40%, while decreasing rate limiter’s average latency from 70ms to ~40ms.",
+        "Integrated customer support ticketing into all user-facing apps with Spring Boot, Solr and Kafka, enabling direct ticket creation and built a dashboard over the Solr collection for internal resolution tracking, reducing customer grievance SLAs by 20%.",
+        "Designed an AI-based auctioneer POC to drive live auctions by announcing bids and engaging participants, leveraging LlamaIndex for context management, Kokoro-TTS for real-time speech synthesis, and FastAPI for service orchestration.",
         "Upgraded all member microservices from Spring 2.7.3 to 3.2.2, ensuring compatibility with Java 21 and GraalVM JDK."
       ],
       "technologies": [
