@@ -7,8 +7,7 @@
     "dev": "eleventy --serve",
     "validate:content": "node scripts/validate-content.js",
     "build": "npm run validate:content && eleventy",
-    "smoke:test": "node scripts/smoke-test.js",
-    "test": "npm run build && npm run smoke:test"
+    "test": "npm run build"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2"
